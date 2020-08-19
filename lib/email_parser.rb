@@ -13,13 +13,7 @@ class EmailAddressParser
   end  
   
   def parse(email_addresses)
-    refined_emails = []
-    email_addresses.each do |email|
-      if email != ""
-        refined_emails << email
-      end 
-    end   
-    refined_emails.uniq
-  end   
+    
+  end 
   
 end   
