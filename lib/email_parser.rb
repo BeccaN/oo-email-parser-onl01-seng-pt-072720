@@ -12,11 +12,26 @@ class EmailAddressParser
     
   end  
   
-  def parse
-    #parse through string and return a useful array of email addresses 
-    #should only return unique emails 
+  def parse(email_addresses)
+    
     
     
   end   
   
 end   
+
+
+
+
+email_addresses = email_addresses.split(/[,\s]/)
+def refine(email_addresses)
+  refined_emails = []
+  email_addresses.each do |email|
+    if email != ""
+      refined_emails << email
+    end 
+  end   
+  refined_emails.uniq
+end 
+
+refine(email_addresses)
