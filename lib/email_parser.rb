@@ -5,13 +5,18 @@
 
 class EmailAddressParser
   
-  def initialize
+  attr_accessor :email_addresses
+  
+  def initialize(email_addresses)
+    @email_addresses = email_addresses
     
   end  
   
   def parse
     #parse through string and return a useful array of email addresses 
     #should only return unique emails 
+    
+    
   end   
   
 end   
