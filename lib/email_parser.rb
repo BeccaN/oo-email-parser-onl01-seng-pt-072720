@@ -5,6 +5,10 @@
 
 class EmailAddressParser
   
+  def initialize
+    
+  end  
+  
   def parse
     #parse through string and return a useful array of email addresses 
     #should only return unique emails 
